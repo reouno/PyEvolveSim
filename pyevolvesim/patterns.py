@@ -3,7 +3,7 @@
 import random
 from typing import List
 from pydantic import BaseModel, Field
-from life_game.grid import Grid, Coordinate
+from pyevolvesim.grid import Grid, Coordinate
 
 
 class Pattern(BaseModel):

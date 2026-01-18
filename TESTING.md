@@ -44,7 +44,7 @@ uv run pytest tests/test_evolution_features.py -v
 uv add --dev pytest-cov
 
 # Run with coverage report
-uv run pytest tests/ --cov=life_game/evolution --cov-report=term-missing
+uv run pytest tests/ --cov=pyevolvesim/evolution --cov-report=term-missing
 ```
 
 ### Run Specific Test
@@ -203,7 +203,7 @@ jobs:
       - name: Install dependencies
         run: uv sync
       - name: Run type checks
-        run: uv run mypy life_game/evolution/ tests/
+        run: uv run mypy pyevolvesim/evolution/ tests/
       - name: Run linting
         run: uv run ruff check .
       - name: Run tests
@@ -315,7 +315,7 @@ uv run pytest tests/test_mutation.py::TestClampValue::test_clamp_within_range -v
 uv run pytest tests/ -k "mutation" -v
 
 # Run with coverage
-uv run pytest tests/ --cov=life_game/evolution
+uv run pytest tests/ --cov=pyevolvesim/evolution
 
 # Run with output
 uv run pytest tests/ -s

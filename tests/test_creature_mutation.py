@@ -5,7 +5,7 @@ valid gene values that respect Pydantic field constraints.
 """
 
 import pytest
-from life_game.evolution.creature import Genes, Creature
+from pyevolvesim.evolution.creature import Genes, Creature
 
 
 class TestGenesMutation:

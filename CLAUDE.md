@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Python project called "life-game" managed with [uv](https://github.com/astral-sh/uv), a fast Python package manager. The project requires Python 3.13+.
+This is a Python project called "PyEvolveSim" managed with [uv](https://github.com/astral-sh/uv), a fast Python package manager. The project requires Python 3.13+.
 
 ## Development Commands
 
@@ -18,7 +18,7 @@ uv run python main.py
 Run type checking with mypy:
 ```bash
 uv run mypy main.py
-uv run mypy life_game/evolution/  # Check evolution module
+uv run mypy pyevolvesim/evolution/  # Check evolution module
 ```
 
 Check code with ruff:
@@ -83,7 +83,7 @@ The project uses Python 3.13 (specified in `.python-version`). The virtual envir
 ### Project Structure
 
 ```
-life_game/
+pyevolvesim/
 ├── evolution/          # Evolution simulation module
 │   ├── behaviors.py       # Creature behavior logic (pure functions)
 │   ├── config.py          # Configuration parameters

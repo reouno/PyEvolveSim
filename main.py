@@ -1,5 +1,5 @@
-from life_game.game import Game
-from life_game.patterns import (
+from pyevolvesim.game import Game
+from pyevolvesim.patterns import (
     GLIDER,
     BLINKER,
     PULSAR,
@@ -50,10 +50,10 @@ def run_conway_life():
 def run_evolution_simulation():
     """Run the evolution simulation."""
     import random
-    from life_game.evolution.simulation import EvolutionSimulation
-    from life_game.evolution.world import EvolutionWorld
-    from life_game.evolution.creature import Creature, Genes
-    from life_game.evolution.config import (
+    from pyevolvesim.evolution.simulation import EvolutionSimulation
+    from pyevolvesim.evolution.world import EvolutionWorld
+    from pyevolvesim.evolution.creature import Creature, Genes
+    from pyevolvesim.evolution.config import (
         WORLD_WIDTH,
         WORLD_HEIGHT,
         INITIAL_CREATURES,

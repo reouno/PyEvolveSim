@@ -3,7 +3,11 @@
     "allow": [
       "Bash(uv add:*)",
       "Bash(uv run mypy:*)",
-      "Bash(uv run ruff:*)"
+      "Bash(uv run ruff:*)",
+      "Bash(uv run:*)",
+      "Bash(grep:*)",
+      "Bash(wc:*)",
+      "Bash(ls:*)"
     ]
   }
 }

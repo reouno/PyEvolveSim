@@ -5,7 +5,7 @@ while maintaining independence from rendering concerns.
 """
 
 import pytest
-from life_game.evolution.stats_history import StatsHistory, StatsSnapshot
+from pyevolvesim.evolution.stats_history import StatsHistory, StatsSnapshot
 
 
 class MockStats:

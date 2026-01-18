@@ -182,7 +182,7 @@ $ uv run pytest tests/ -v
 
 ### 1. Type Checking
 ```bash
-$ uv run mypy life_game/evolution/ tests/
+$ uv run mypy pyevolvesim/evolution/ tests/
 Success: no issues found in 13 source files ✓
 ```
 

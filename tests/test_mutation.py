@@ -5,7 +5,7 @@ while respecting their valid ranges.
 """
 
 import pytest
-from life_game.evolution.mutation import (
+from pyevolvesim.evolution.mutation import (
     clamp_value,
     mutate_integer_gene,
     mutate_continuous_gene,

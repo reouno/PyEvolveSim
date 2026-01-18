@@ -5,7 +5,7 @@ while maintaining independence from data collection concerns.
 """
 
 import pytest
-from life_game.evolution.graph_renderer import GraphRenderer, GraphDisplay
+from pyevolvesim.evolution.graph_renderer import GraphRenderer, GraphDisplay
 
 
 class TestGraphRenderer:

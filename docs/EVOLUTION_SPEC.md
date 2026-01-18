@@ -767,4 +767,4 @@ This document specifies the evolution simulation's complete design, known limita
 
 **Document Version:** 2.0
 **Date:** 2026-01-18
-**Target Version:** life-game v0.1.0
+**Target Version:** PyEvolveSim v0.1.0

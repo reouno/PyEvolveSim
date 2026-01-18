@@ -1,10 +1,10 @@
 """Tests for atomic rendering functionality."""
 
-from life_game.evolution.renderer import EvolutionRenderer
-from life_game.evolution.world import EvolutionWorld
-from life_game.evolution.stats import WorldStats
-from life_game.evolution.creature import Creature, Genes
-from life_game.evolution.config import INITIAL_ENERGY
+from pyevolvesim.evolution.renderer import EvolutionRenderer
+from pyevolvesim.evolution.world import EvolutionWorld
+from pyevolvesim.evolution.stats import WorldStats
+from pyevolvesim.evolution.creature import Creature, Genes
+from pyevolvesim.evolution.config import INITIAL_ENERGY
 
 
 def test_render_returns_string():

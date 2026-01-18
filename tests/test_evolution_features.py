@@ -9,10 +9,10 @@ These tests verify the major features of the evolution system:
 """
 
 import random
-from life_game.evolution.world import EvolutionWorld
-from life_game.evolution.creature import Creature, Genes
-from life_game.evolution.stats import WorldStats
-from life_game.evolution.config import (
+from pyevolvesim.evolution.world import EvolutionWorld
+from pyevolvesim.evolution.creature import Creature, Genes
+from pyevolvesim.evolution.stats import WorldStats
+from pyevolvesim.evolution.config import (
     WORLD_WIDTH,
     WORLD_HEIGHT,
     INITIAL_ENERGY,
@@ -89,7 +89,7 @@ class TestTemporalVariation:
 
     def test_spawn_rate_within_bounds(self):
         """Test that spawn rate stays within configured min/max."""
-        from life_game.evolution.config import (
+        from pyevolvesim.evolution.config import (
             SEASON_MIN_SPAWN_RATE,
             SEASON_MAX_SPAWN_RATE,
         )

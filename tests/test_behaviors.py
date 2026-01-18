@@ -4,7 +4,7 @@ These tests verify that behavior functions correctly handle decision-making,
 pathfinding, and action selection for creatures.
 """
 
-from life_game.evolution.behaviors import (
+from pyevolvesim.evolution.behaviors import (
     find_visible_foods,
     get_closest_food,
     move_towards,
@@ -13,9 +13,9 @@ from life_game.evolution.behaviors import (
     find_empty_neighbor,
     decide_action,
 )
-from life_game.evolution.creature import Creature, Genes
-from life_game.evolution.food import Food
-from life_game.evolution.world import EvolutionWorld
+from pyevolvesim.evolution.creature import Creature, Genes
+from pyevolvesim.evolution.food import Food
+from pyevolvesim.evolution.world import EvolutionWorld
 
 
 class TestFindVisibleFoods:
