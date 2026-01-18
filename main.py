@@ -1,5 +1,5 @@
-from pyevolvesim.game import Game
-from pyevolvesim.patterns import (
+from pyevolvesim.life_game.game import Game
+from pyevolvesim.life_game.patterns import (
     GLIDER,
     BLINKER,
     PULSAR,

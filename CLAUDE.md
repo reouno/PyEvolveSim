@@ -19,6 +19,7 @@ Run type checking with mypy:
 ```bash
 uv run mypy main.py
 uv run mypy pyevolvesim/evolution/  # Check evolution module
+uv run mypy pyevolvesim/life_game/  # Check life_game module
 ```
 
 Check code with ruff:
@@ -38,7 +39,7 @@ uv run ruff check --fix .
 
 ### Testing
 
-Run all tests (71 tests total):
+Run all tests (106 tests total):
 ```bash
 uv run pytest tests/ -v
 ```
@@ -54,7 +55,7 @@ uv run pytest tests/test_graph_renderer.py -v     # Graph rendering (20 tests)
 
 Run tests with coverage:
 ```bash
-uv run pytest tests/ --cov=life_game/evolution --cov-report=term-missing
+uv run pytest tests/ --cov=pyevolvesim/evolution --cov-report=term-missing
 ```
 
 ### Managing Dependencies
@@ -96,8 +97,11 @@ pyevolvesim/
 │   ├── stats.py           # Statistics calculation
 │   ├── stats_history.py   # Statistics history management (independent)
 │   └── world.py           # World state management
-├── game.py             # Conway's Game of Life
-└── patterns.py         # Pattern definitions
+└── life_game/          # Conway's Game of Life module
+    ├── game.py            # Game loop management
+    ├── grid.py            # Grid state and evolution logic
+    ├── patterns.py        # Pattern definitions
+    └── renderer.py        # Terminal rendering
 
 tests/
 ├── test_mutation.py            # Unit tests for mutation logic (17 tests)
@@ -128,7 +132,7 @@ main.py                 # Entry point
    - Pydantic models for data validation
    - Protocol types for interface definitions
 
-4. **Testability**: Critical logic is unit tested (71 tests total)
+4. **Testability**: Critical logic is unit tested (106 tests total)
    - Pure functions are separated for easy testing
    - Each module has dedicated unit tests
    - Integration tests verify system behavior

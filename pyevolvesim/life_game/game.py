@@ -2,8 +2,8 @@
 
 import time
 from pydantic import BaseModel, Field
-from pyevolvesim.grid import Grid
-from pyevolvesim.renderer import Renderer
+from pyevolvesim.life_game.grid import Grid
+from pyevolvesim.life_game.renderer import Renderer
 
 
 class Game(BaseModel):

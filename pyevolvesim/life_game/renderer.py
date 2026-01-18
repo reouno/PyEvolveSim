@@ -2,7 +2,7 @@
 
 import os
 from pydantic import BaseModel, Field
-from pyevolvesim.grid import Grid
+from pyevolvesim.life_game.grid import Grid
 
 
 class Renderer(BaseModel):
